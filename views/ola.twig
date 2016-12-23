@@ -1,0 +1,27 @@
+
+{% extends "layout.twig" %}
+
+{% block titulo %}Titulo OLA{% endblock %}
+
+{% block conteudo %}
+
+    <h3>Olá {{ nome }}</h3>
+
+    Acesse o <a href="{{ path('link', { nome: nome }) }}">link</a> ( {{ url('link', {nome: nome}) }} ).
+    <br /><br /><br /><br />
+    <hr>
+    
+    <div class ="container">
+        <div class="col-md-12">
+            <form action="{{ path('cadastrar') }}" method="post">  
+                <label for="Titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Informe o Título"><br />
+
+                <label for="Conteudo">Conteúdo</label>
+                <textarea name="conteudo"></textarea><br />
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}

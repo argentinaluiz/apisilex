@@ -1,0 +1,8 @@
+
+{% extends "layout.twig" %}
+
+{% block conteudo %}
+
+    Acesse o <a href="{{ path('post', { id: id }) }}">link</a> ( {{ url('post', {id: id}) }} ).
+    
+{% endblock %}
