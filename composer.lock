@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "a0adee8297c90980c3d3ffe25e5a6c6f52fa73fa"
+                "reference": "1afec9d2743b96750e282e803bdfa434f7b6e625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/a0adee8297c90980c3d3ffe25e5a6c6f52fa73fa",
-                "reference": "a0adee8297c90980c3d3ffe25e5a6c6f52fa73fa",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/1afec9d2743b96750e282e803bdfa434f7b6e625",
+                "reference": "1afec9d2743b96750e282e803bdfa434f7b6e625",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2016-11-05 13:23:40"
+            "time": "2016-12-30 16:00:35"
         },
         {
             "name": "doctrine/cache",
@@ -124,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "9fa5962201c8b69cb68d091bfa6a77e92e2a3559"
+                "reference": "e14f7e04cf7106fed6061b42aeeb56df556db49d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/9fa5962201c8b69cb68d091bfa6a77e92e2a3559",
-                "reference": "9fa5962201c8b69cb68d091bfa6a77e92e2a3559",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/e14f7e04cf7106fed6061b42aeeb56df556db49d",
+                "reference": "e14f7e04cf7106fed6061b42aeeb56df556db49d",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-12-04 05:51:54"
+            "time": "2016-12-17 21:41:50"
         },
         {
             "name": "doctrine/collections",
@@ -193,18 +193,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "2dfc898f2a66c192d6a195bdc9c5040f65adfaab"
+                "reference": "d7414669e9e3f6d467eaef88893e4deec7e4a0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/2dfc898f2a66c192d6a195bdc9c5040f65adfaab",
-                "reference": "2dfc898f2a66c192d6a195bdc9c5040f65adfaab",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/d7414669e9e3f6d467eaef88893e4deec7e4a0b8",
+                "reference": "d7414669e9e3f6d467eaef88893e4deec7e4a0b8",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.2 || ^7.0"
+                "php": "^5.5 || ^7.0"
             },
             "require-dev": {
+                "doctrine/coding-standard": "~0.1@dev",
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
@@ -251,7 +252,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2016-09-01 10:39:08"
+            "time": "2016-12-17 22:35:33"
         },
         {
             "name": "doctrine/common",
@@ -840,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9c7fe99ae3947d853dcc61efd9660e9cbad1d025"
+                "reference": "17e6f90eab15f45ae5955d7cfdb8687c7688146e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9c7fe99ae3947d853dcc61efd9660e9cbad1d025",
-                "reference": "9c7fe99ae3947d853dcc61efd9660e9cbad1d025",
+                "url": "https://api.github.com/repos/symfony/console/zipball/17e6f90eab15f45ae5955d7cfdb8687c7688146e",
+                "reference": "17e6f90eab15f45ae5955d7cfdb8687c7688146e",
                 "shasum": ""
             },
             "require": {
@@ -893,7 +894,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-05 08:41:28"
+            "time": "2016-12-29 21:47:05"
         },
         {
             "name": "symfony/debug",
@@ -1398,12 +1399,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8ad862b98e8c0ea509a04242c454c97e1265bd9a"
+                "reference": "5d1f37c881b91c32b20c066cf081e83b737eb065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8ad862b98e8c0ea509a04242c454c97e1265bd9a",
-                "reference": "8ad862b98e8c0ea509a04242c454c97e1265bd9a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5d1f37c881b91c32b20c066cf081e83b737eb065",
+                "reference": "5d1f37c881b91c32b20c066cf081e83b737eb065",
                 "shasum": ""
             },
             "require": {
@@ -1411,12 +1412,12 @@
             },
             "require-dev": {
                 "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.2@dev"
+                "symfony/phpunit-bridge": "~3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.29-dev"
+                    "dev-master": "1.30-dev"
                 }
             },
             "autoload": {
@@ -1451,7 +1452,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-05 09:20:45"
+            "time": "2016-12-29 21:21:24"
         }
     ],
     "packages-dev": [],
