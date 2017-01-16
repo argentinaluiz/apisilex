@@ -49,6 +49,7 @@
                 <th>Descricao</th>
                 <th>Valor</th>
                 <th>Link</th>
+                <th>Opções</th>
             </tr>
         </thead>
         <tbody>
@@ -61,6 +62,15 @@
                     <td>{{ produtos.descricao}}</td>                    
                     <td>{{ produtos.valor}}</td>                                        
                     <td> Acesse o <a href="{{ path('listar_unico', { id: produtos.id }) }}">link</a> ( {{ url('listar_unico', {id: produtos.id}) }} ). </td>
+                    <td>
+                        
+                        <a href="{{ path('editar', { id: produtos.id }) }}"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="{{ path('apagar', { id: produtos.id }) }}"><span class="glyphicon glyphicon-trash"></span></a>
+                        <a href="{{ path('inserir', { id: produtos.id }) }}"><span class="glyphicon glyphicon-plus"></span></a>
+                        
+                        
+                    
+                    </td>
                 </tr>
             {% endfor %}            
         </tbody>

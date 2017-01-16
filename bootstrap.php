@@ -72,7 +72,7 @@ $em = EntityManager::create(
         'port'    => '3306',
         'user'    => 'root',
         'password'  => 'ws56gb89',
-        'dbname'  => 'curso',
+        'dbname'  => 'trilhando_doctrine',
     ),
     $config,
     $evm
