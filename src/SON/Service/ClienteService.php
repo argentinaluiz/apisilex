@@ -29,4 +29,12 @@ class ClienteService {
         
         return $result;
     }
+    
+    public function fetchAll() {
+        
+        $repository = $this->clienteMapper;
+        $dados = $repository->findAll();
+        return $dados;
+    }  
+    
 }

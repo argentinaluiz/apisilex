@@ -17,6 +17,30 @@ use Symfony\Component\HttpFoundation\Response;
 //$app = new Silex\Application();
 //$app['debug'] = true;
     
+$app['clienteService'] = function() use ($em) { 
+    
+    $clienteEntity = new SON\Entity\Cliente();
+    $clienteMapper = new SON\Mapper\ClienteMapper($em);
+    $clienteService = new SON\Service\ClienteService($clienteEntity, $clienteMapper);    
+    return $clienteService;
+};
+
+$app->get('/api/clientes', function() use ($app) {
+
+    $dados = $app['clienteService']->fetchAll();
+    return $app->json($dados);
+    
+});
+
+
+
+
+
+
+
+
+
+
 
 // /////////////////////////////////////////////////////////////////////////////////////////
 // DEFINIDO SERVICO REPOSITORIO
@@ -24,6 +48,11 @@ use Symfony\Component\HttpFoundation\Response;
 $app['produtos.repository'] = $app->share(function() use($em){
     return $em->getRepository('\SON\Entity\Produtos');
 });
+
+
+
+
+
 
 
 // /////////////////////////////////////////////////////////////////////////////////////////

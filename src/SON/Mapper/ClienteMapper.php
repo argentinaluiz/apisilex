@@ -3,18 +3,20 @@
 namespace SON\Mapper;
 
 use SON\Entity\Cliente;
+use Doctrine\ORM\EntityManager;
+
 
 //use Symfony\Component\Security\Core\User\UserInterface;
 //use Symfony\Component\Security\Core\Role\Role;
 
 class ClienteMapper {
     
-    private $em;
-    
     public function __construct(Doctrine\ORM\EntityManager $em) {
         $this->em = $em;
-    }
-
+    }    
+    
+    private $em;
+    
     private $dados = [
         
         0 => [
@@ -29,6 +31,8 @@ class ClienteMapper {
             'email'     => 'clientey@gmail.com'
         ],
     ];
+
+
     
     public function insert(Cliente $cliente) {
         
@@ -55,6 +59,8 @@ class ClienteMapper {
     public function fetchAll() {
         
         $dados = $this->dados;
+        return $dados;
+        
     }       
 
     
