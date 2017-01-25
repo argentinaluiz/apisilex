@@ -57,10 +57,8 @@ class ClienteMapper {
     }   
 
     public function fetchAll() {
-        
-        $dados = $this->dados;
-        return $dados;
-        
+        $repository = $this->em->getRepository(Cliente::class);
+        return $repository->findAll();
     }       
 
     
